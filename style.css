@@ -1,52 +1,105 @@
-*{
-    padding: 0;
-    border: none;
+body{
+    padding: 0rem;
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #23333E;
+    overflow: hidden;
 }
 
-
-nav{
+.navigation{
+    height: 5rem;
+    background : #142330;
     display: flex;
-    border-bottom: 1px solid lightgray;
+    flex-direction: row;    
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;   
-}
-
-.leftSide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: white;
     gap: 2rem;
+    border-bottom: 0.2px solid white;
+    
 }
 
-.logo{
-    width: 3.5rem;
-    height: 1.5rem;
-    background: black;
-}
-
-.nologo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.rightSide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-    gap: 1rem;
-}
-
-.try{
-    color: #0000ff;
-}
-
-.nologo *, .rightSide *, .logo{
+.navigation *{
     cursor: pointer;
+}
+
+.logo {
+    border-right: 1px solid white;
+    margin: 0.5rem;
+}
+
+.logo img{
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.all{
+    color: white;
+}
+
+.firstMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20rem;
+}
+
+.welcome{
+    font-size: 100px;
+    font-family: 'Playfair Display', serif;
+}
+
+.subtitle{
+    font-family: 'Playfair Display', serif;
+}
+
+.opacityMover{
+    background: #23333E;
+    height:50rem;
+    width:60rem;
+    position:absolute;
+    opacity: 60%;
+    z-index: -1;
+    height: 40rem;
+    transform: rotate(-45deg);
+    top: -30rem;
+    left: -20rem;
+    animation: moveOpacity1 1800ms ease-in;
+ }
+
+ @keyframes moveOpacity1 {
+    100%{
+        top: -10rem;
+        left: 20rem;
+    }
+ }
+
+ .opacityMover2{
+    background: #23333E;
+    height:50rem;
+    width:60rem;
+    position:absolute;
+    opacity: 60%;
+    z-index: -1;
+    height: 40rem;
+    transform: rotate(-45deg);
+    top: -10rem;
+    left: 20rem;
+    animation: moveOpacity2 1800ms ease-in;
+ }
+
+ @keyframes moveOpacity2 {
+    90%,100%{
+        top: 20rem;
+        left: 50rem;
+    }
+ }
+
+.firstMessage img{
+    position: absolute;
+    z-index: -2; 
+    opacity: 100%;   
+    height: 50rem;
+    width: 50rem;
 }
