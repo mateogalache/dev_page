@@ -2,7 +2,6 @@ body{
     padding: 0rem;
     margin: 0;
     background: #23333E;
-    overflow: hidden;
 }
 
 .navigation{
@@ -34,72 +33,144 @@ body{
 
 .all{
     color: white;
-}
-
-.firstMessage{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: relative;
-    margin-top: 20rem;
 }
 
-.welcome{
-    font-size: 100px;
-    font-family: 'Playfair Display', serif;
-}
-
-.subtitle{
-    font-family: 'Playfair Display', serif;
-}
-
-.opacityMover{
-    background: #23333E;
-    height:50rem;
-    width:60rem;
-    position:absolute;
-    opacity: 60%;
-    z-index: -1;
-    height: 40rem;
-    transform: rotate(-45deg);
-    top: -30rem;
-    left: -20rem;
-    animation: moveOpacity1 1800ms ease-in;
- }
-
- @keyframes moveOpacity1 {
-    100%{
-        top: -10rem;
-        left: 20rem;
-    }
- }
-
- .opacityMover2{
-    background: #23333E;
-    height:50rem;
-    width:60rem;
-    position:absolute;
-    opacity: 60%;
-    z-index: -1;
-    height: 40rem;
-    transform: rotate(-45deg);
-    top: -10rem;
-    left: 20rem;
-    animation: moveOpacity2 1800ms ease-in;
- }
-
- @keyframes moveOpacity2 {
-    90%,100%{
-        top: 20rem;
-        left: 50rem;
-    }
- }
-
-.firstMessage img{
-    position: absolute;
-    z-index: -2; 
-    opacity: 100%;   
-    height: 50rem;
+.about{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10rem;
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     width: 50rem;
 }
+
+.about *{
+    margin: 1rem;
+}
+
+
+
+.about img{
+    border-right: 1px solid blueviolet;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+
+
+.textAbout{
+    padding: 1rem;
+    text-align: justify;
+}
+
+.tools{
+    display: flex;
+    flex-direction: row;
+}
+
+.tools img{
+    position: relative;
+    border: none;
+    padding: 0;
+    object-fit: contain;
+    width: 2.5rem;
+    height: 2.5rem;    
+    padding: .5rem;
+}
+
+.tools div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    position: relative;
+    
+}
+
+
+
+.html{
+    color: #23333E;    
+    transition: all ease 500ms;
+}
+
+.html:hover{
+    color: white;
+    content: '80%';
+    background: linear-gradient(transparent 20%, blueviolet 80%);
+}
+
+.html:before, .css:before, .js:before, .php:before, .mysql:before{
+    content: '80%';
+    position: absolute;
+    font-size: 8px;
+    top: 85%;
+    left: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.js:before{
+    content: '20%';
+}
+
+.php:before, .sql:before{
+    content: '50%';
+}
+
+.php{
+    color: #23333E; 
+    transition: all ease 500ms;
+}
+
+.php:hover{
+    color: white;
+    content: '80%';
+    background: linear-gradient(transparent 50%, blueviolet );
+}
+
+.mysql{
+    color: #23333E; 
+    transition: all ease 500ms;
+}
+
+.mysql:hover{
+    color: white;
+    content: '80%';
+    background: linear-gradient(transparent 50%, blueviolet );
+}
+
+.css{
+    color: #23333E; 
+    transition: all ease 500ms;
+}
+
+.css:hover{
+    color: white;
+    content: '80%';
+    background: linear-gradient(transparent 20%, blueviolet 80%);
+}
+
+.js{
+    color: #23333E; 
+    transition: all ease 500ms;
+}
+
+.js:hover{
+    color: white;
+    content: '80%';
+    background: linear-gradient(transparent 80%, blueviolet );
+}
+
